@@ -1,38 +1,90 @@
 .App {
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.customiz-page-container{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+.hero-contaniner{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  background-color: black;
+}
+.hero-contaniner .hero-details{
+  width: 70%;
+  background-image: url("./Assets/Images/Ellipse2.png"); 
+  height: 200px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero-contaniner img{
+  width: 200px;
+}
+.custom-side-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.custom-side-container div{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.custom-side-container div label{
+  margin: 10px 0;
+  color: white;
+}
+.custom-side-container div input,textarea{
+  background-color: #3b3535;
+  border: 1px solid gray;
+  border-radius: 4px;
+  color: white;
+}
+.customiz-page-custom-side{
+  width: 30%;
+  padding: 30px;
+  background-color: rgb(38, 36, 36);
+}
+.customiz-page-hero{
+  width: 90%;
+color: white;
+}
+.customiz-page-hero h1{
+  color: #C91A14;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-hero {
+  background-image: linear-gradient(92.88deg, #ffffff 9.16%, #fff4f454 43.89%, #ffeef27e 64.72%);
+  border-radius: 15px;
+  border-style: none;
+  color: black;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 2.2rem;
+  height: 2.5rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-hero a{
+  text-decoration: none;
+  color: unset;
 }
